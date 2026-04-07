@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="w-10 h-10 rounded-xl bg-accent flex items-center justify-center">
-            <span className="text-accent-foreground font-black text-lg">D</span>
+            <span className="text-accent-foreground font-black text-lg">DR</span>
           </div>
           <div>
             <span className="text-primary-foreground font-black text-lg tracking-tight">Desentupidora Rápida</span>
