@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-10">
           <div>
-            <h3 className="font-black text-xl mb-4">DesentupePro</h3>
+            <h3 className="font-black text-xl mb-4">Desentupidora Rápida</h3>
             <p className="text-primary-foreground/60 text-sm leading-relaxed">
               Desentupidora profissional com mais de 10 anos de experiência. Atendimento 24h com a melhor equipe da região.
             </p>
@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-primary-foreground/10 mt-10 pt-6 text-center text-primary-foreground/40 text-sm">
-          © 2026 DesentupePro — Todos os direitos reservados.
+          © 2026 Desentupidora Rápida — Todos os direitos reservados.
         </div>
       </div>
     </footer>
