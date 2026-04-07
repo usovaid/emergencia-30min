@@ -1,19 +1,57 @@
-import { Droplets, Home, Building2, ShowerHead, PipetteIcon, Waves } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { CheckCircle2 } from "lucide-react";
 
+// Lista com os seus 6 serviços originais adaptada para receber fotos!
 const services = [
-  { icon: Droplets, title: "Desentupimento de Esgoto", desc: "Resolução rápida de entupimentos em redes de esgoto residencial e comercial." },
-  { icon: Home, title: "Desentupimento Residencial", desc: "Pias, vasos sanitários, ralos e tanques. Atendimento rápido na sua casa." },
-  { icon: Building2, title: "Desentupimento Comercial", desc: "Soluções para restaurantes, shoppings, condomínios e empresas." },
-  { icon: ShowerHead, title: "Desentupimento de Ralo", desc: "Ralos de banheiro, cozinha e área de serviço desentupidos na hora." },
-  { icon: PipetteIcon, title: "Hidrojateamento", desc: "Limpeza profunda com equipamento de alta pressão para casos difíceis." },
-  { icon: Waves, title: "Limpa Fossa", desc: "Serviço completo de limpeza e esgotamento de fossas sépticas." },
+  { 
+    id: 1, 
+    title: "Desentupimento de Esgoto", 
+    desc: "Resolução rápida de entupimentos em redes de esgoto residencial e comercial.",
+    image: "/placeholder-esgoto.jpg",
+    keywords: ["Tubulação Central", "Sem Quebra", "Rápido"]
+  },
+  { 
+    id: 2, 
+    title: "Desentupimento Residencial", 
+    desc: "Pias, vasos sanitários, ralos e tanques. Atendimento rápido na sua casa.",
+    image: "/placeholder-residencial.jpg",
+    keywords: ["Pias e Ralos", "Vasos Sanitários", "Limpeza"]
+  },
+  { 
+    id: 3, 
+    title: "Desentupimento Comercial", 
+    desc: "Soluções para restaurantes, shoppings, condomínios e empresas.",
+    image: "/placeholder-comercial.jpg",
+    keywords: ["Restaurantes", "Condomínios", "Empresas"]
+  },
+  { 
+    id: 4, 
+    title: "Desentupimento de Ralo", 
+    desc: "Ralos de banheiro, cozinha e área de serviço desentupidos na hora.",
+    image: "/placeholder-ralo.jpg",
+    keywords: ["Banheiros", "Cozinhas", "Área Externa"]
+  },
+  { 
+    id: 5, 
+    title: "Hidrojateamento", 
+    desc: "Limpeza profunda com equipamento de alta pressão para casos difíceis.",
+    image: "/placeholder-hidro.jpg",
+    keywords: ["Alta Pressão", "Limpeza Profunda", "Casos Graves"]
+  },
+  { 
+    id: 6, 
+    title: "Limpa Fossa", 
+    desc: "Serviço completo de limpeza e esgotamento de fossas sépticas.",
+    image: "/placeholder-fossa.jpg",
+    keywords: ["Esgotamento", "Limpeza Completa", "Caminhão Sugador"]
+  },
 ];
 
 const ServicesSection = () => {
   return (
     <section className="py-20 bg-background" id="servicos">
       <div className="container mx-auto px-4">
+        
+        {/* Cabeçalho da Seção */}
         <div className="text-center mb-14">
           <span className="text-accent font-bold text-sm uppercase tracking-widest">Nossos Serviços</span>
           <h2 className="text-3xl md:text-4xl font-black text-foreground mt-2">
@@ -24,19 +62,55 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Grid de Cartões de Serviço com Imagens */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {services.map((s) => (
-            <Card key={s.title} className="group hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-border/50 bg-card">
-              <CardContent className="p-8">
-                <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-5 group-hover:bg-accent/20 transition-colors">
-                  <s.icon className="w-7 h-7 text-accent" />
+            <article 
+              key={s.id} 
+              className="group bg-card rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-border/50 flex flex-col"
+            >
+              {/* Área da Foto */}
+              <div className="h-56 bg-accent/10 relative overflow-hidden">
+                <img 
+                  src={s.image} 
+                  alt={`Serviço de ${s.title}`}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  // Imagem temporária enquanto você não sobe as oficiais
+                  onError={(e) => {
+                    e.currentTarget.src = "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?q=80&w=800&auto=format&fit=crop"; 
+                  }}
+                />
+                {/* Degradê para deixar o texto de baixo mais legível caso queira adicionar títulos na imagem depois */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              </div>
+
+              {/* Área de Textos */}
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-xl font-bold text-card-foreground mb-3 leading-tight">
+                  {s.title}
+                </h3>
+                
+                <p className="text-muted-foreground mb-6 flex-grow leading-relaxed">
+                  {s.desc}
+                </p>
+                
+                {/* Palavras-chave para reforço de SEO */}
+                <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-border/50">
+                  {s.keywords.map((keyword, index) => (
+                    <span 
+                      key={index} 
+                      className="inline-flex items-center gap-1.5 bg-accent/10 text-accent text-xs font-bold px-3 py-1.5 rounded-full"
+                    >
+                      <CheckCircle2 className="w-3.5 h-3.5" />
+                      {keyword}
+                    </span>
+                  ))}
                 </div>
-                <h3 className="text-lg font-bold text-card-foreground mb-2">{s.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
-              </CardContent>
-            </Card>
+              </div>
+            </article>
           ))}
         </div>
+
       </div>
     </section>
   );
