@@ -12,8 +12,8 @@ const Header = () => {
             <span className="text-accent-foreground font-black text-lg">D</span>
           </div>
           <div>
-            <span className="text-primary-foreground font-black text-lg tracking-tight">DesentupePro</span>
-            <span className="hidden sm:block text-primary-foreground/50 text-xs">Desentupidora 24h</span>
+            <span className="text-primary-foreground font-black text-lg tracking-tight">Desentupidora Rápida</span>
+            <span className="hidden sm:block text-primary-foreground/50 text-xs">Atendimento 24h</span>
           </div>
         </div>
 
