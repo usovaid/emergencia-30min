@@ -32,7 +32,7 @@ const Header = () => {
         <div className="flex items-center gap-3">
           <a href="tel:+554284236339" className="hidden md:flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors">
             <Phone className="w-4 h-4" />
-            (44) 99999-9999
+            (44) 8423-6339
           </a>
           <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
             <Button variant="whatsapp" size="sm" className="animate-shake shadow-lg hover:shadow-green-500/20">
