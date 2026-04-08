@@ -2,7 +2,7 @@ import { Phone, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-plumber.jpg";
 
-const WHATSAPP_URL = "https://wa.me/5511999999999?text=Olá! Preciso de um serviço de desentupimento urgente!";
+const WHATSAPP_URL = "https://wa.me/554284236339?text=Olá! Preciso de um serviço de desentupimento urgente!";
 
 const HeroSection = () => {
   return (
@@ -45,7 +45,7 @@ const HeroSection = () => {
                 Chamar no WhatsApp Agora
               </Button>
             </a>
-            <a href="tel:+5511999999999">
+            <a href="tel:+554284236339">
               <Button variant="cta" size="xl" className="w-full sm:w-auto">
                 <Phone className="w-6 h-6" />
                 Ligar Agora
