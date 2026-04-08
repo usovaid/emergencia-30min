@@ -1,7 +1,7 @@
 import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const WHATSAPP_URL = "https://wa.me/5511925896591?text=Olá! Preciso de um serviço de desentupimento urgente!";
+const WHATSAPP_URL = "https://wa.me/554284236339?text=Olá! Preciso de um serviço de desentupimento urgente!";
 
 const Header = () => {
   return (
