@@ -14,10 +14,10 @@ const Footer = () => {
           <div>
             <h4 className="font-bold mb-4">Contato</h4>
             <div className="space-y-3 text-primary-foreground/70 text-sm">
-              <a href="tel:+5511999999999" className="flex items-center gap-2 hover:text-accent transition-colors">
+              <a href="tel:+554284236339" className="flex items-center gap-2 hover:text-accent transition-colors">
                 <Phone className="w-4 h-4" /> (11) 99999-9999
               </a>
-              <a href="https://wa.me/5511999999999" className="flex items-center gap-2 hover:text-accent transition-colors">
+              <a href="https://wa.me/554284236339" className="flex items-center gap-2 hover:text-accent transition-colors">
                 <MessageCircle className="w-4 h-4" /> WhatsApp 24h
               </a>
               <span className="flex items-center gap-2">
