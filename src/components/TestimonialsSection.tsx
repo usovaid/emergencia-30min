@@ -2,9 +2,9 @@ import { Star } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const testimonials = [
-  { name: "Maria S.", location: "São Paulo, SP", text: "Chegaram em 20 minutos! Resolveram o entupimento da pia rapidinho. Super recomendo!", rating: 5 },
-  { name: "Carlos R.", location: "Guarulhos, SP", text: "Serviço excelente e preço justo. A visita técnica gratuita me deu muita confiança.", rating: 5 },
-  { name: "Ana L.", location: "Osasco, SP", text: "Precisei às 2h da manhã e eles vieram! Profissionais e atenciosos. Nota 10!", rating: 5 },
+  { name: "Maria S.", location: "Campo Grande - MS", text: "Chegaram em 20 minutos! Resolveram o entupimento da pia rapidinho. Super recomendo!", rating: 5 },
+  { name: "Carlos R.", location: "Campo Grande - MS", text: "Serviço excelente e preço justo. A visita técnica gratuita me deu muita confiança.", rating: 5 },
+  { name: "Ana L.", location: "Campo Grande - MS", text: "Precisei às 2h da manhã e eles vieram! Profissionais e atenciosos. Nota 10!", rating: 5 },
 ];
 
 const TestimonialsSection = () => {
