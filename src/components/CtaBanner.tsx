@@ -2,7 +2,7 @@ import { MessageCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 // Mantendo o número de Cianorte
-const WHATSAPP_URL = "https://wa.me/554284236339?text=Olá! Preciso de um serviço de desentupimento urgente!";
+const WHATSAPP_URL = "https://wa.me/556796860878?text=Olá! Preciso de um serviço de desentupimento urgente!";
 
 const CtaBanner = () => {
   return (
