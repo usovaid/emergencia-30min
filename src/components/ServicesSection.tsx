@@ -47,7 +47,7 @@ const services = [
 
 const ServicesSection = () => {
   // Seu número principal
-  const phoneNumber = "554284236339";
+  const phoneNumber = "556796860878";
 
   return (
     <section className="py-20 bg-background" id="servicos">
