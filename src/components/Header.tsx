@@ -1,7 +1,7 @@
 import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const WHATSAPP_URL = "https://wa.me/554284236339?text=Olá! Preciso de um serviço de desentupimento urgente!";
+const WHATSAPP_URL = "https://wa.me/556796860878?text=Olá! Preciso de um serviço de desentupimento urgente!";
 
 const Header = () => {
   return (
@@ -30,7 +30,7 @@ const Header = () => {
         </div>
 
         <div className="flex items-center gap-3">
-          <a href="tel:+554284236339" className="hidden md:flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors">
+          <a href="tel:+556796860878" className="hidden md:flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors">
             <Phone className="w-4 h-4" />
             (44) 8423-6339
           </a>
