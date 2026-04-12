@@ -15,16 +15,16 @@ const Footer = () => {
             <h4 className="font-bold mb-4">Contato</h4>
             <div className="space-y-3 text-primary-foreground/70 text-sm">
               <a href="tel:+554284236339" className="flex items-center gap-2 hover:text-accent transition-colors">
-                <Phone className="w-4 h-4" /> (11) 99999-9999
+                <Phone className="w-4 h-4" /> (67) 9686-0878
               </a>
               <a href="https://wa.me/554284236339" className="flex items-center gap-2 hover:text-accent transition-colors">
                 <MessageCircle className="w-4 h-4" /> WhatsApp 24h
               </a>
               <span className="flex items-center gap-2">
-                <Mail className="w-4 h-4" /> contato@desentupepro.com.br
+                <Mail className="w-4 h-4" /> contato@desentupidorarapida.com.br
               </span>
               <span className="flex items-center gap-2">
-                <MapPin className="w-4 h-4" /> São Paulo e região metropolitana
+                <MapPin className="w-4 h-4" /> Campo Grande e Região
               </span>
             </div>
           </div>
@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-primary-foreground/10 mt-10 pt-6 text-center text-primary-foreground/40 text-sm">
-          © 2026 Desentupidora Rápida — Todos os direitos reservados.
+          © 2024 Desentupidora Rápida — Todos os direitos reservados.
         </div>
       </div>
     </footer>
